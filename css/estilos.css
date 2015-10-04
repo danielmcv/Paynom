@@ -1,0 +1,16 @@
+h1 {
+	font-family:"Helvetica";
+	text-align: center;
+}
+table{
+	border:1px solid #000;
+	border-collapse:collapse;
+	background:#C2DEFE;
+	width:900px;
+	text-align:center;
+}
+
+table td{
+	border:1px solid #000;
+	padding:15px;
+}

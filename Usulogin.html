@@ -1,0 +1,51 @@
+<idoctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta charset="utf-8">
+<title>PayNom</title>
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<div>
+					<img src="http://i.imgur.com/HDzRA3u.png" width="120" alt="py">
+				</div>
+				<div class="mdl-layout-spacer">
+					<div class="mdl-cell mdl-cell--3-col">Tu nomina más segura</div>
+				</div>
+				<nav class="mdl-navigation mdl-layout--short-screen-only">
+					<a class="mdl-navigation__link">Cuenta
+					<!-- Left aligned menu below button -->
+					<button id="demo-menu-lower-left"
+					        class="mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+
+					<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+					  <li class="mdl-menu__item">Escoge el usuario
+					  </li>
+					  <li class="mdl-menu__item">Empleado</li>
+					  <li class="mdl-menu__item"><a href="Singin.html"style="text-decoration: none">Empresa</li>
+					  </li>
+					</ul>
+					</a>
+					<a href="#" class="mdl-badge">Nomina</a>
+				</nav> 
+			</div>
+		</header>
+		<body>
+		<script>
+			function usrpas(){
+			if (document.form1.txt.value=="admin" && document.form1.num.value=="123"){window.location="index.html"}
+			else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+			}
+			document.oncontextmenu=new Function("return false");
+			</script>
+			<form name="form1">
+			<input type="text" name="txt"> Usuario (admin)<br>
+			<input type="text" name="num"> Contraseña (123)<br>
+			<input type="button" value="ir a.." onclick="usrpas()">
